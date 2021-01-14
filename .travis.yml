@@ -9,4 +9,4 @@ before_install:
   - docker build -t kanishkaw/frontend -f Dockerfile.dev .
 
 script:
-  - docker run kanishkaw/frontend npm run test -- --coverage
+  - docker run kanishkaw/frontend npm run test -- --coverage --watchAll=false
