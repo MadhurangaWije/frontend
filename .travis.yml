@@ -5,5 +5,5 @@ services:
 before_install:
   - docker build -t kanishkaw/frontend -f Dockerfile.dev .
 
-scripts:
+script:
   - docker run kanishkaw/frontend npm run test -- --coverage
